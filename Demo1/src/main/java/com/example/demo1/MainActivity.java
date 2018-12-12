@@ -1,8 +1,19 @@
-package com.example.liuzhouliang.demo12;
+package com.example.demo1;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+/**
+ * @ describe 
+ * 
+ * @author lzl
+ *
+ * @ time 2018/12/12 18:03
+ * 
+ * @ param
+ * 
+ * @ return
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
