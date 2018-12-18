@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
-
+/**
+ * https://blog.csdn.net/user11223344abc/article/details/78784373
+ */
 android {
     compileSdkVersion 'android-P'
     defaultConfig {
