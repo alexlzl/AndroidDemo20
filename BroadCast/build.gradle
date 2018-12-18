@@ -8,7 +8,39 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+        /**
+         * 在理解了flavor的前提下（Flavor基本使用），我们需要明白一个概念—————维度！
+         * 维度在gradle中的体现是：flavorDimensions，譬如：
+         * 这是一个正确的维度扩展思路
+         *
+         * money
+         * 场景，一个APP，我们推出收费和免费的版本。
+         *
+         * channel
+         * 场景，不同的市场渠道
+         */
+        flavorDimensions("money", "channel")
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    productFlavors {
+        vip {
+            dimension "money"
+        }
+
+        free {
+            dimension "money"
+        }
+
+        baidu {
+            manifestPlaceholders = [CHANNEL: "baidu"]
+            dimension "channel"
+        }
+
+        xiaomi {
+            manifestPlaceholders = [CHANNEL: "xiaomi"]
+            dimension "channel"
+        }
+
     }
     buildTypes {
         release {

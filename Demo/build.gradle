@@ -9,7 +9,52 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+        flavorDimensions("A","B","C")
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    productFlavors {
+//        zj {
+//            manifestPlaceholders = [CHANNEL: "zj"]
+//        }
+//
+//        xiaomi {
+//            manifestPlaceholders = [CHANNEL: "xiaomi"]
+//        }
+//
+//        qh360 {
+//            manifestPlaceholders = [CHANNEL: "qh360"]
+//        }
+//
+//        baidu {
+//            manifestPlaceholders = [CHANNEL: "baidu"]
+//        }
+//
+//        wandoujia {
+//            manifestPlaceholders = [CHANNEL: "wandoujia"]
+//        }
+        zj {
+            dimension "A"
+        }
+
+        xiaomi {
+            dimension "B"
+        }
+
+        qh360 {
+            dimension "C"
+        }
+
+        baidu {
+            dimension "A"
+        }
+
+        wandoujia {
+            dimension "B"
+        }
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [CHANNEL: name]
+        }
+
     }
     buildTypes {
 

@@ -24,6 +24,9 @@
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${CHANNEL}" />
     </application>
 
 </manifest>
