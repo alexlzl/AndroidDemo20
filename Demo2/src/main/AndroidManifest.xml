@@ -14,9 +14,38 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
+        <receiver android:name=".CustomReceiver">
+            <intent-filter>
+                <action android:name="com.example.normal.receiver" />
+            </intent-filter>
+        </receiver>
+
+
+        <!--<receiver-->
+            <!--android:name=".CustomReceiver"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.test.broad" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<receiver-->
+        <!--android:name=".CustomReceiver"-->
+        <!--android:enabled="true"-->
+        <!--android:exported="true">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.USER_PRESENT" /> &lt;!&ndash; 手机开屏广播 &ndash;&gt;-->
+        <!--</intent-filter>-->
+
+        <!--<intent-filter>-->
+        <!--<action android:name="my.broadcast.test" /> &lt;!&ndash; 自定义广播 &ndash;&gt;-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+
     </application>
 
 </manifest>
