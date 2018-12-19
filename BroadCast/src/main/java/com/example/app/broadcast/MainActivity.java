@@ -49,11 +49,21 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         //Context.getPackageName()方法返回Application ID
         ((Button) view).setText(getPackageName());
-        Intent intent = new Intent("com.example.test");
-        intent.setComponent(new ComponentName("com.example.app.broadcast", "com.example.app.broadcast.StaticReceiver"));
-        intent.putExtra("msg", "hello kugou");
-        Log.i("sended", "我发送了");
-        sendBroadcast(intent);
+        view.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent("com.example.test");
+                intent.setComponent(new ComponentName("com.example.app.broadcast", "com.example.app.broadcast.StaticReceiver"));
+                intent.putExtra("msg", "hello kugou");
+                Log.i("sended", "我发送了");
+                sendBroadcast(intent);
+            }
+        },3000);
+//        Intent intent = new Intent("com.example.test");
+//        intent.setComponent(new ComponentName("com.example.app.broadcast", "com.example.app.broadcast.StaticReceiver"));
+//        intent.putExtra("msg", "hello kugou");
+//        Log.i("sended", "我发送了");
+//        sendBroadcast(intent);
     }
 
     public void onClick1(View view) {
