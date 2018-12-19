@@ -2,6 +2,8 @@ package com.carmelo.library;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Process;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Window;
 import android.view.WindowManager;
@@ -16,6 +18,7 @@ public class PixelActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.e("TAG","PixelActivity PID=="+Process.myPid());
         Window window = getWindow();
         window.setGravity(Gravity.LEFT | Gravity.TOP);
         WindowManager.LayoutParams params = window.getAttributes();
