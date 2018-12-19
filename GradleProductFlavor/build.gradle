@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+
+android {
+
+
+    compileSdkVersion 'android-P'
+    buildToolsVersion '28.0.2'
+
+    defaultConfig {
+        applicationId "zj.flavordemo"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        flavorDimensions("money")
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+
+    signingConfigs {
+        // your debug keystore
+        debug {
+            storeFile file("buglytestreleasekey.jks")
+            storePassword "buglytestreleasekey"
+            keyAlias "buglytestreleasekey"
+            keyPassword "buglytestreleasekey"
+        }
+
+        release{
+            storeFile file("buglytestreleasekey.jks")
+            storePassword "buglytestreleasekey"
+            keyAlias "buglytestreleasekey"
+            keyPassword "buglytestreleasekey"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    productFlavors {
+        zj {}
+        huawei {}
+        xiaomi {}
+//        qqyyb {}
+//        wandoujia {}
+//        baidu {}
+//        qh360 {}
+//        nduow {}
+//        mumy {}
+//        lenovo {}
+//        oppo {}
+//        vivo {}
+//        samsung {}
+
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [CHANNEL: name]
+        }
+    }
+
+
+//    productFlavors {
+//
+//        zj {
+//            manifestPlaceholders = [CHANNEL: "zj"]
+//        }
+//
+//        xiaomi {
+//            manifestPlaceholders = [CHANNEL: "xiaomi"]
+//        }
+//
+//        qh360 {
+//            manifestPlaceholders = [CHANNEL: "qh360"]
+//        }
+//
+//        baidu {
+//            manifestPlaceholders = [CHANNEL: "baidu"]
+//        }
+//
+//        wandoujia {
+//            manifestPlaceholders = [CHANNEL: "wandoujia"]
+//        }
+//
+//    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    testImplementation 'junit:junit:4.12'
+}
