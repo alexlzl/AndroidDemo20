@@ -1,1 +1,1 @@
-include ':Demo', ':Demo1', ':Demo2', ':Demo4', 'BroadCast', 'GradleProductFlavor', 'KeepAliveLib', 'KeepAlive'
+include ':Demo', ':Demo1', ':Demo2', ':Demo4', ':AccountManager', 'BroadCast', 'GradleProductFlavor', 'KeepAliveLib', 'KeepAlive'

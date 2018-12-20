@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AccountManager/AccountManager.iml" filepath="$PROJECT_DIR$/AccountManager/AccountManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/BroadCast/BroadCast.iml" filepath="$PROJECT_DIR$/BroadCast/BroadCast.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo/Demo.iml" filepath="$PROJECT_DIR$/Demo/Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo1/Demo1.iml" filepath="$PROJECT_DIR$/Demo1/Demo1.iml" />

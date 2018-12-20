@@ -17,7 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".broadcast.SecondActivity"/>
+        <activity android:name=".broadcast.SecondActivity"
+            android:process=":live"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:finishOnTaskLaunch="false"
+            android:launchMode="singleInstance"/>
         <receiver android:name="com.example.app.broadcast.StaticReceiver">
             <intent-filter>
                 <action android:name="com.example.test" />

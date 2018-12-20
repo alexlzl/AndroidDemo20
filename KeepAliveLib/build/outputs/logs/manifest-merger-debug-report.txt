@@ -1,0 +1,67 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:2:1-20:12
+	package
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml
+		INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:2:1-20:12
+		INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:2:1-20:12
+		INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:4:5-19:19
+	android:supportsRtl
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:7:9-35
+	android:label
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:6:9-41
+	android:allowBackup
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:5:9-35
+service#com.carmelo.library.KeepLiveManager$GrayInnerService
+ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:9:9-10:38
+	android:process
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:10:13-36
+	android:name
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:9:18-66
+activity#com.carmelo.library.PixelActivity
+ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:12:9-18:50
+	android:process
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:13:13-36
+	android:excludeFromRecents
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:15:13-46
+	android:launchMode
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:18:13-48
+	android:exported
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:16:13-37
+	android:theme
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:14:13-53
+	android:finishOnTaskLaunch
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:17:13-47
+	android:name
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml:12:19-48
+uses-sdk
+INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml
+INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml
+INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml
+INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml
+		INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml
+		ADDED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml
+		INJECTED from F:\AS_WORKSPACE\Demo12\KeepAliveLib\src\main\AndroidManifest.xml

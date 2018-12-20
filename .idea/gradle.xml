@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AccountManager" />
             <option value="$PROJECT_DIR$/BroadCast" />
             <option value="$PROJECT_DIR$/Demo" />
             <option value="$PROJECT_DIR$/Demo1" />

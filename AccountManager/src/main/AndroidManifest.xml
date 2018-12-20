@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.accountmanager">
+
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AuthenticatorActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivty" />
+        <activity android:name=".MainActivity"/>
+
+        <service android:name=".AuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+        <service
+            android:name=".SyncService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+            <meta-data
+                android:name="android.provider.CONTACTS_STRUCTURE"
+                android:resource="@xml/contacts" />
+        </service>
+        <!--一个适配器只能同步一个Authority，若想使一个账户同步多个Authority，可以向系统注册多个绑定同一账户的sync-adapter-->
+        <!--authorities用来唯一指定一个ContentProvider的URI authority。这个值最好设置为“包名 + .provider”。 -->
+        <!--指定实现ContentProvider的完整类名。-->
+        <!--设置外部应用是否可以访问。因为我们的Provider并不需要别的应用访问，所以设置为”false”。这个值并不影响同步框架的访问。
+            android:exported="false"-->
+        <!--设置是否可同步。如果设置为true 就不需要在代码中再调用setIsSyncable() 。这个值决定了同步框架可以与Provider传输数据，
+            但是也仅在你明确调用的时候才传输。android:syncable="true"-->
+        <!--<provide-->
+            <!--android:name="com.account.accountmanagerdemo.accountrefresh"-->
+            <!--android:authorities="com.account.accountmanagerdemo.accountrefresh.provider"-->
+            <!--android:exported="false"-->
+            <!--android:syncable="true">-->
+
+        <!--</provide>-->
+    </application>
+</manifest>

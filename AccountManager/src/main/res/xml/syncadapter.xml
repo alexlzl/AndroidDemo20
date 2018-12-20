@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sync-adapter xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="com.account.accountmanagerdemo"
+    android:allowParallelSyncs="false"
+    android:contentAuthority="com.android.contacts"
+    android:isAlwaysSyncable="true"
+    android:supportsUploading="false"
+    android:userVisible="false" >
+</sync-adapter>
+    <!--注意：accountType包名称-->
+    <!--allowParallelSyncs是否支持上传到云端,否则仅支持下载-->
+    <!--accountType账号类型，需要与前面在代码段中的ACCOUNT_TYPE 常量还有authenticator的元数据文件中定义的保持一致。-->
+    <!--userVisible是否支持在设置中可见-->
+    <!--设置是否允许SyncAdapter多实例同时运行。-->
+    <!--指定同步框架是否可以在任意时间运行你的SyncAdapter。-->
+    <!--一个适配器只能同步一个Authority，若想使一个账户同步多个Authority，可以向系统注册多个绑定同一账户的sync-adapter-->

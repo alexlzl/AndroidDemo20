@@ -1,0 +1,3 @@
+com.carmelo.library
+string app_name
+style LiveActivityStyle
