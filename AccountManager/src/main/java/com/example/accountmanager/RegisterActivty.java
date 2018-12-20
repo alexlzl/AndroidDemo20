@@ -44,7 +44,7 @@ public class RegisterActivty extends AppCompatActivity implements View.OnClickLi
                 //如果注册成功，则执行以下代码，否则重新注册，这里默认注册成功
                 Account account = new Account(mAccount, ConstantsGlobal.ACCOUNT_TYPE);
                 AccountManager am = AccountManager.get(RegisterActivty.this);
-//                am.addAccountExplicitly(account, mPwd, null);
+                am.addAccountExplicitly(account, mPwd, null);
                 finish();
                 break;
         }

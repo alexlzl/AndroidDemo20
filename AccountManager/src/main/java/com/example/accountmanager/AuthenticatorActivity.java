@@ -53,9 +53,9 @@ public class AuthenticatorActivity extends AccountAuthenticatorActivity implemen
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-//            case login:
-//                login();
-//                break;
+            case R.id.login:
+                login();
+                break;
             case R.id.register:
                 Intent intent = new Intent(this, RegisterActivty.class);
                 startActivity(intent);

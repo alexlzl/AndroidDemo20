@@ -58,7 +58,7 @@
         <!--设置是否可同步。如果设置为true 就不需要在代码中再调用setIsSyncable() 。这个值决定了同步框架可以与Provider传输数据，
             但是也仅在你明确调用的时候才传输。android:syncable="true"-->
         <!--<provide-->
-            <!--android:name="com.account.accountmanagerdemo.accountrefresh"-->
+            <!--android:name="com.example.accountmanager.AccountContentProvider"-->
             <!--android:authorities="com.account.accountmanagerdemo.accountrefresh.provider"-->
             <!--android:exported="false"-->
             <!--android:syncable="true">-->
