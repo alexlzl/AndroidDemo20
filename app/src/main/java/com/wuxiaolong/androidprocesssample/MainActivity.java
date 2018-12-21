@@ -9,9 +9,11 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
 import android.os.Messenger;
+import android.os.Process;
 import android.os.RemoteException;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     public static final int MSG_FROM_CLIENT = 1000;
     public static final int MSG_FROM_SERVICE = 1001;
     private Messenger clientMessenger;
+    private TextView mTv;
     private ServiceConnection messengerServiceConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
@@ -83,6 +86,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mTv=findViewById(R.id.test);
+        mTv.setText("main===id"+Process.myPid());
         // 文件共享
         SingletonUtil singletonUtil = SingletonUtil.getInstance();
         singletonUtil.setUserId("007");

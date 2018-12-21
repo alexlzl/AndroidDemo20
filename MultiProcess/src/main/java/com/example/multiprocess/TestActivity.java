@@ -1,8 +1,10 @@
 package com.example.multiprocess;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Process;
+import android.view.View;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -22,6 +24,10 @@ public class TestActivity extends Activity {
         setContentView(R.layout.test_layout);
         mTv=findViewById(R.id.test2);
         mTv.setText("TestActivity===processid==="+Process.myPid()+getProcessName());
+    }
+
+    public void test2(View view){
+        startActivity(new Intent(this,ThreeActivity.class));
     }
 
     public static String getProcessName() {
