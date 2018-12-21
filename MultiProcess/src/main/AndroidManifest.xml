@@ -20,10 +20,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".TestActivity"
+
             android:process=":process1"
-            android:multiprocess="true"
+
             />
-        <activity android:name=".ThreeActivity"/>
+        <activity android:name=".ThreeActivity"
+           />
     </application>
 
 </manifest>
