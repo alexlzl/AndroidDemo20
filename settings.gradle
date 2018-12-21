@@ -1,1 +1,1 @@
-include ':Demo', ':Demo1', ':Demo2', ':Demo4', ':AccountManager', 'BroadCast', 'GradleProductFlavor', 'KeepAliveLib', 'KeepAlive', 'AccountManager2', ':ActivityManagerLib1', ':AccountManager1'
+include ':Demo', ':Demo1', ':Demo2', ':Demo4', ':AccountManager', ':MultiProcess', 'BroadCast', 'GradleProductFlavor', 'KeepAliveLib', 'KeepAlive', 'AccountManager2', ':ActivityManagerLib1', ':AccountManager1'
