@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.d("keeplive","MainActivity process = " + android.os.Process.myPid());
+        Log.e("TAG","MainActivity process = " + android.os.Process.myPid());
 
         startBtn = (Button) findViewById(R.id.btn1);
 

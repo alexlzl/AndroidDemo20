@@ -15,6 +15,7 @@ public class DemoService extends KeepliveService{
         //do something
         int i = super.onStartCommand(intent, flags, startId);
         Log.e("TAG","DemoService PID = " + android.os.Process.myPid());
+        Person person=new Person();
         return i;
     }
 }
