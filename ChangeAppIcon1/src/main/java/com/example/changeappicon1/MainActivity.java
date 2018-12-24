@@ -7,8 +7,21 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * @author lzl
+ * @ describe https://blog.csdn.net/qq_16628781/article/details/69054325
+ * <p>
+ * 动态更换APP 桌面icon的引述；
+ * activity组件及定义“同盟”组件activity-alias；
+ * PackageManager类进行启用/禁用组件；
+ * PackageInfo的简介；
+ * 新名词记录{PackageInfo:Androidmanifest.xml文件描述类}
+ * @ time 2018/12/24 18:02
+ * @ param
+ * @ return
+ */
 public class MainActivity extends AppCompatActivity {
-    String action ;
+    String action;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
