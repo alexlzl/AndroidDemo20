@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.viewpager.widget.ViewPager
+    android:id="@+id/view_pager"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.andrsay.oreonotificationsample.MainActivity">
+    <androidx.viewpager.widget.PagerTabStrip
+        android:id="@+id/pager_tab_strip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"/>
+</androidx.viewpager.widget.ViewPager>
